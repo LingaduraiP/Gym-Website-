@@ -1,0 +1,93 @@
+.programs {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .heading {
+        span {
+            font-size: 4.5rem;
+            font-style: italic;
+            font-weight: bolder;
+            margin: 0 1rem;
+            &:nth-of-type(2) {
+                color: var(--lightgray);
+            }
+        }
+    }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 15rem));
+        grid-gap: 2rem;
+
+        .data-container {
+            width: 90%;
+            background-color: gray;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+            border-radius: 1rem;
+            &:hover {
+                background-color: var(--orange);
+                cursor: pointer;
+            }
+            span {
+                &:nth-of-type(1) {
+                    svg {
+                        height: 3rem;
+                        width: 3rem;
+                        fill: var(--lightgray);
+                    }
+                }
+                &:nth-of-type(2) {
+                    font-size: 1.2rem;
+                    color: var(--lightgray);
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                &:nth-of-type(3) {
+                    font-size: 0.8rem;
+                    color: var(--lightgray);
+                    line-height: 2;
+                }
+            }
+            .button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span {
+                    margin-right: 2rem;
+                    color: var(--lightgray);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .programs {
+        .heading {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            flex-direction: column;
+            font-weight: bolder;
+            letter-spacing: 2px;
+            gap: 0.1rem;
+            span {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+.program-blur2 {
+    right: 1rem;
+}
